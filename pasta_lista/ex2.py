@@ -21,4 +21,20 @@ fat_total = sum(vendas_1sem)
 print('Faturamento Total: {:,}'.format(fat_total))
 
 percentual = maior_valor / fat_total
-print('O melhor m~es representou {:.1%} das vendas do ano '.format(percentual))
+print('O melhor mes representou {:.1%} das vendas do ano '.format(percentual))
+
+
+"""Crie uma lista com top 3 valores de vendas do ano """
+top3 = []
+print(vendas_1sem)
+maior_valor = max(vendas_1sem)
+top3.append(maior_valor)
+
+vendas_1sem.remove(maior_valor)
+
+maior_valor = max(vendas_1sem)
+top3.append(maior_valor)
+vendas_1sem.remove(maior_valor)
+maior_valor = max(vendas_1sem)
+top3.append(maior_valor)
+print(top3)
