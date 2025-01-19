@@ -16,3 +16,9 @@ i_menor_valor = vendas_1sem.index(menor_valor)
 
 print('O melhor valor do ano foi {} com venda de {}'.format(meses[i_maior_valor],maior_valor))
 print('O menor valor do ano foi {} com vendas de {}'.format(meses[i_menor_valor], menor_valor))
+
+fat_total = sum(vendas_1sem)
+print('Faturamento Total: {:,}'.format(fat_total))
+
+percentual = maior_valor / fat_total
+print('O melhor m~es representou {:.1%} das vendas do ano '.format(percentual))
